@@ -1,11 +1,11 @@
 import { ThemeProvider, DefaultTheme } from 'styled-components';
-import Presentation from './components/presentation/presentation';
 import usePersistedState from './utils/usePersistedState';
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 import GlobalStyle from './styles/global';
 
-// import About from './components/About';
+import Presentation from './components/presentation/presentation';
+import About from './components/about/about';
 // import Technologies from './components/Technologies';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
@@ -23,8 +23,8 @@ function App() {
       <Presentation toggleTheme={toggleTheme} />
       <div className='App'>
         <GlobalStyle />
-        {/* <About toggleTheme={toggleTheme} />
-        <Technologies toggleTheme={toggleTheme} />
+        <About toggleTheme={toggleTheme} />
+        {/* <Technologies toggleTheme={toggleTheme} />
         <Projects toggleTheme={toggleTheme} />
         <Contact toggleTheme={toggleTheme} /> */}
       </div>
