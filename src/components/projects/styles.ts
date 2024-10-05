@@ -111,7 +111,7 @@ export const Description = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: ${props => props.theme.colors.secundary};
+    color: ${props => props.theme.colors.text};
     margin: 0 30px;
     text-align: justify;
     height: 175px;

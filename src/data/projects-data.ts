@@ -1,4 +1,4 @@
-import hi from "../assets/hi.png";
+import hi from "../assets/images/hi.png";
 
 const ProjectsData = [
   {

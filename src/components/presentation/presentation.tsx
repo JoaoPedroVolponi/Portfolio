@@ -4,7 +4,8 @@ import { ThemeContext } from 'styled-components';
 import { FaMoon } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
 import { ContainerPresentation, ContainerMe, TextName, SubText, Navigations, TextNavs, Imagem, SwitchContainer } from './styles';
-import hi from '../../assets/hi.png';
+import abourtDark from '../../assets/images/aboutDark.png';
+import lightAbout from '../../assets/images/lightAbout.png';
 
 interface Props {
     toggleTheme(): void;
@@ -13,6 +14,9 @@ interface Props {
 const Presentation: React.FC<Props> = ({ toggleTheme }) => {
     const themeContext = useContext(ThemeContext);
     const title = themeContext?.title || 'default';
+
+    const theme = useContext(ThemeContext);
+    const imageSrc = (theme?.title ?? 'light') === 'light' ? lightAbout : abourtDark;
 
     return (
         <ContainerPresentation>
@@ -54,7 +58,7 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
                 <TextNavs href="#projetos">Projetos</TextNavs>
                 <TextNavs href="#contato">Contato</TextNavs>
             </Navigations>
-            <Imagem src={hi}/>
+            <Imagem src={imageSrc}/>
         </ContainerPresentation>
     );
 }

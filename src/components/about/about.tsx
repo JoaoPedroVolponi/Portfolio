@@ -1,14 +1,24 @@
 import { ContainerAbout, Image, SubContainerAbout, SubTitle, Description, ContainerButtons, ContactButton, TextButton } from './styles';
-import hi from '../../assets/hi.png';
+import hi from '../../assets/images/hi.png';
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
+
+import abourtDark from '../../assets/images/aboutDark.png';
+import lightAbout from '../../assets/images/lightAbout.png';
+
 interface Props {
     toggleTheme(): void;
 }
 
 const About: React.FC<Props> = () => {
+    
+    const theme = useContext(ThemeContext);
+    
+    const imageSrc = (theme?.title ?? 'light') === 'light' ? lightAbout : abourtDark;
 
     return (
         <ContainerAbout id="sobre">
-            <Image src={hi} alt="João Pedro Volponi" />
+            <Image src={imageSrc} alt="João Pedro Volponi" />
 
             <SubContainerAbout>
                 <SubTitle>
