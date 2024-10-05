@@ -4,6 +4,8 @@ import { ThemeContext } from 'styled-components';
 import { FaMoon } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
 import { ContainerPresentation, ContainerMe, TextName, SubText, Navigations, TextNavs, Imagem, SwitchContainer } from './styles';
+import presentationLight from '../../assets/images/presentation/presentation-light.png';
+import presentationDark from '../../assets/images/presentation/presentation-dark.png';
 
 interface Props {
     toggleTheme(): void;

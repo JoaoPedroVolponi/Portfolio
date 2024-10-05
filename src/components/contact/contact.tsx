@@ -15,8 +15,9 @@ import {
   SocialMedia,
   Imagem,
 } from "./styles";
-import hi from "../../assets/images/hi.png";
 import { ThemeContext } from "styled-components";
+import contactLight from "../../assets/images/contact/contact-light.png";
+import contactDark from "../../assets/images/contact/contact-dark.png";
 
 interface Props {
   toggleTheme(): void;
@@ -25,6 +26,9 @@ interface Props {
 const Contact: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   const colors = themeContext ? themeContext.colors : { text: "#000" };
+
+  const theme = useContext(ThemeContext);
+  const imageSrc = (theme?.title ?? 'light') === 'light' ? contactLight : contactDark;
 
   AOS.init();
   return (
@@ -108,7 +112,7 @@ const Contact: React.FC<Props> = () => {
         </BoxCV>
       </SubContainerContact>
 
-      <Imagem src={hi} />
+      <Imagem src={imageSrc} />
     </ContainerContact>
   );
 };
