@@ -19,10 +19,14 @@ export const ContainerAbout = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 500px;
+    height: 20vw;
 
     @media screen and (max-width: 645px){    
         width: 77vw;
+    }
+
+    @media screen and (max-width: 980px){  
+        display: none;
     }
 `;
 
@@ -49,7 +53,7 @@ export const Description = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: ${props => props.theme.colors.secundary};
+    color: ${props => props.theme.colors.text};
     font-size: 15px;
     text-align: justify;
     hyphens: auto;

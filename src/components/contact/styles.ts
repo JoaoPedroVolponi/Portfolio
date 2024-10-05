@@ -93,20 +93,12 @@ export const LinkText = styled.a`
 export const BoxCV = styled.a`
     display: flex;
     flex-direction: row;
-    border: 1px solid #37D892;
     align-items: center;
-    background: #37D892;
     border-radius: 5px;
     padding: 15px 10px 15px 10px;
     width: 200px;
     justify-content: space-around;
-    border: 1px solid #37D892;
     transition: all 0.3s ease-in-out;
-
-    &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
-    }
 `;
 
 export const TitleContactCV = styled.a`
@@ -151,8 +143,8 @@ export const SocialMedia = styled.a`
     transition: all 0.3s ease-in-out;
 
     &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
+        // background-color: #37D89220;
+        border: 1px solid #37A2D8;
     }
 `;
 

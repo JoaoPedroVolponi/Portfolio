@@ -44,8 +44,7 @@ export const ButtonSeeMore = styled.button`
     border-radius: 5px;
 
     &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
+        border: 1px solid #37A2D8;
     }
 `;
 
@@ -73,16 +72,17 @@ export const Project = styled.div`
 
 export const BoxImage = styled.div`
     display: flex;
-    background: #E6E9F0;
+    background: #FFFFFF;
     height: 200px;
     justify-content: center;
     align-items: center;
     border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
 `;
 
 export const Image = styled.img`
     display: flex;
-    height: 70%;
+    height: 98%;
 `;
 
 export const ContainerTitle = styled.div`
@@ -111,7 +111,7 @@ export const Description = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: ${props => props.theme.colors.secundary};
+    color: ${props => props.theme.colors.text};
     margin: 0 30px;
     text-align: justify;
     height: 175px;
