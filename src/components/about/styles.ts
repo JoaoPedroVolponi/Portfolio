@@ -19,10 +19,14 @@ export const ContainerAbout = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 500px;
+    height: 20vw;
 
     @media screen and (max-width: 645px){    
         width: 77vw;
+    }
+
+    @media screen and (max-width: 980px){  
+        display: none;
     }
 `;
 
