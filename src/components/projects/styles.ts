@@ -72,16 +72,17 @@ export const Project = styled.div`
 
 export const BoxImage = styled.div`
     display: flex;
-    background: #E6E9F0;
+    background: #FFFFFF;
     height: 200px;
     justify-content: center;
     align-items: center;
     border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
 `;
 
 export const Image = styled.img`
     display: flex;
-    height: 70%;
+    height: 98%;
 `;
 
 export const ContainerTitle = styled.div`
