@@ -34,7 +34,7 @@ export const SubContainerAbout = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 `;
 
 export const SubTitle = styled.span`

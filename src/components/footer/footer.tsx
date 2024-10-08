@@ -8,7 +8,7 @@ interface Props {
 const Footer: React.FC<Props> = () => {
   return (
     <ContainerFooter>
-      <Text>© 2024 | João Pedro Volponi</Text>
+      <Text>João Pedro Volponi</Text>
     </ContainerFooter>
   );
 };
