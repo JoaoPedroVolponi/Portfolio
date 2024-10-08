@@ -1,41 +1,54 @@
-import { ContainerAbout, Image, SubContainerAbout, SubTitle, Description, ContainerButtons, ContactButton, TextButton } from './styles';
-import { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
-import aboutLight from '../../assets/images/about/about-light.png';
-import abourtDark from '../../assets/images/about/about-dark.png';
+import {
+  ContainerAbout,
+  Image,
+  SubContainerAbout,
+  SubTitle,
+  Description,
+  ContainerButtons,
+  ContactButton,
+  TextButton,
+} from "./styles";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
+import aboutLight from "../../assets/images/about/about-light.png";
+import abourtDark from "../../assets/images/about/about-dark.png";
 
 interface Props {
-    toggleTheme(): void;
+  toggleTheme(): void;
 }
 
 const About: React.FC<Props> = () => {
-    
-    const theme = useContext(ThemeContext);
-    
-    const imageSrc = (theme?.title ?? 'light') === 'light' ? aboutLight : abourtDark;
+  const theme = useContext(ThemeContext);
 
-    return (
-        <ContainerAbout id="sobre">
-            <Image src={imageSrc} alt="João Pedro Volponi" />
+  const imageSrc =
+    (theme?.title ?? "light") === "light" ? aboutLight : abourtDark;
 
-            <SubContainerAbout>
-                <SubTitle>
-                    Sobre mim
-                </SubTitle>
+  return (
+    <ContainerAbout id="sobre">
+      <Image src={imageSrc} alt="João Pedro Volponi" />
 
-                <Description>
-                    Comecei minha jornada na programação em 2019, quando ingressei na faculdade de Engenharia de Software.
-                </Description>
-                <Description>
-                    Atualmente estou estudando atuando como desenvolvedor iOS para o Itaú Unibanco.
-                </Description>
-                <Description>
-                    Meu foco é aprender novas coisas e aprimorar ainda mais as habilidades que possuo, gosto sempre de estar em constante aprendizado e evoluindo dia após dia, e agregando muito valor.</Description>
-                <ContainerButtons>
-                </ContainerButtons>
-            </SubContainerAbout>
-        </ContainerAbout>
-    );
-}
+      <SubContainerAbout>
+        <SubTitle>Sobre mim</SubTitle>
+
+        <Description>
+          Engenheiro de Software com vasta experiência em desenvolvimento de
+          aplicações robustas e escaláveis.
+        </Description>
+        <Description>
+          Atualmente, atuo como desenvolvedor iOS no Itaú Unibanco, onde
+          contribuo para a criação de soluções inovadoras e de alta qualidade
+          para o setor financeiro.
+        </Description>
+        <Description>
+          Tenho um forte foco em aprender novas tecnologias e aprimorar minhas
+          habilidades existentes. Acredito na importância do aprendizado
+          contínuo e na evolução constante, buscando sempre agregar valor em
+          tudo o que faço.
+        </Description>
+        <ContainerButtons></ContainerButtons>
+      </SubContainerAbout>
+    </ContainerAbout>
+  );
+};
 
 export default About;
