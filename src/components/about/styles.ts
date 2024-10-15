@@ -65,6 +65,7 @@ export const ContainerButtons = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-bottom: 20px;
 `;
 
 export const ContactButton = styled.a`
@@ -81,6 +82,7 @@ export const ContactButton = styled.a`
     &:hover, :focus{
         background-color: #37D89220;
         border: 1px solid #37D892;
+        transform: scale(1.05);  // Adiciona um leve aumento ao passar o mouse
     }
 
     &:hover span, :focus span{
