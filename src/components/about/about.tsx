@@ -5,7 +5,7 @@ import {
   SubTitle,
   Description,
   ContainerButtons,
-  ContactButton,
+  DownloadCvButton,
   TextButton,
 } from "./styles";
 import { useContext } from "react";
@@ -46,14 +46,12 @@ const About: React.FC<Props> = () => {
           contínuo e na evolução constante, buscando sempre agregar valor em
           tudo o que faço.
         </Description>
-        
+
         <ContainerButtons>
-                    <ContactButton href="#contato">
-                        <TextButton>
-                            Download CV
-                        </TextButton>
-                    </ContactButton>
-                </ContainerButtons>
+          <DownloadCvButton href="#contato">
+            <TextButton>Download CV</TextButton>
+          </DownloadCvButton>
+        </ContainerButtons>
       </SubContainerAbout>
     </ContainerAbout>
   );

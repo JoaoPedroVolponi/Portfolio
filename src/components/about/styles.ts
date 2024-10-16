@@ -67,7 +67,7 @@ export const ContainerButtons = styled.div`
     gap: 10px;
 `;
 
-export const ContactButton = styled.a`
+export const DownloadCvButton = styled.a`
     display: flex;
     border: 1px solid #37A2D8;
     padding: 15px 20px;
@@ -82,7 +82,6 @@ export const TextButton = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    // color: #fff;
     color: ${props => props.theme.colors.secundary};
     text-align: center;
     border-radius: 5px;
