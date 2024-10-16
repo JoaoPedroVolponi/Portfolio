@@ -34,7 +34,7 @@ export const SubContainerAbout = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 `;
 
 export const SubTitle = styled.span`
@@ -53,7 +53,7 @@ export const Description = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.secundary};
     font-size: 15px;
     text-align: justify;
     hyphens: auto;
@@ -65,14 +65,13 @@ export const ContainerButtons = styled.div`
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 20px;
 `;
 
 export const ContactButton = styled.a`
     display: flex;
-    background: #37D892;
-    border: 1px solid #37D892;
-    padding: 20px 40px;
+    // background: #37D892;
+    border: 1px solid #37A2D8;
+    padding: 15px 20px;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
@@ -80,13 +79,12 @@ export const ContactButton = styled.a`
     transition: all 0.3s ease-in-out;
 
     &:hover, :focus{
-        background-color: #37D89220;
-        border: 1px solid #37D892;
-        transform: scale(1.05);  // Adiciona um leve aumento ao passar o mouse
+        // background-color: #37D89220;
+        // border: 1px solid #37D892;
     }
 
     &:hover span, :focus span{
-        color: #37D892;
+        // color: #37A2D8;
     }
 `;
 
@@ -94,8 +92,9 @@ export const TextButton = styled.span`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #fff;
+    // color: #fff;
+    color: ${props => props.theme.colors.secundary};
     text-align: center;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 12px;
 `;
