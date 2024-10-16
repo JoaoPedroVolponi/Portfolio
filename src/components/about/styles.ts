@@ -69,7 +69,6 @@ export const ContainerButtons = styled.div`
 
 export const ContactButton = styled.a`
     display: flex;
-    // background: #37D892;
     border: 1px solid #37A2D8;
     padding: 15px 20px;
     justify-content: center;
@@ -77,15 +76,6 @@ export const ContactButton = styled.a`
     border-radius: 100px;
     width: fit-content;
     transition: all 0.3s ease-in-out;
-
-    &:hover, :focus{
-        // background-color: #37D89220;
-        // border: 1px solid #37D892;
-    }
-
-    &:hover span, :focus span{
-        // color: #37A2D8;
-    }
 `;
 
 export const TextButton = styled.span`
