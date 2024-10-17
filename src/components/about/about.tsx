@@ -5,13 +5,14 @@ import {
   SubTitle,
   Description,
   ContainerButtons,
-  ContactButton,
+  DownloadCvButton,
   TextButton,
 } from "./styles";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import aboutLight from "../../assets/images/about/about-light.png";
 import abourtDark from "../../assets/images/about/about-dark.png";
+import { BoxCV, BoxTexts, Icon, LinkTextCV } from "../contact/styles";
 
 interface Props {
   toggleTheme(): void;
@@ -45,7 +46,12 @@ const About: React.FC<Props> = () => {
           contínuo e na evolução constante, buscando sempre agregar valor em
           tudo o que faço.
         </Description>
-        <ContainerButtons></ContainerButtons>
+
+        <ContainerButtons>
+          <DownloadCvButton href="#contato">
+            <TextButton>Download CV</TextButton>
+          </DownloadCvButton>
+        </ContainerButtons>
       </SubContainerAbout>
     </ContainerAbout>
   );
