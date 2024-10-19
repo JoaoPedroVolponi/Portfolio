@@ -48,7 +48,8 @@ const About: React.FC<Props> = () => {
         </Description>
 
         <ContainerButtons>
-          <DownloadCvButton href="#contato">
+          {/* <DownloadCvButton href="#contato"> */}
+          <DownloadCvButton href={cv} download="cv-joao-pedro-volponi.pdf">
             <TextButton>Download CV</TextButton>
           </DownloadCvButton>
         </ContainerButtons>
