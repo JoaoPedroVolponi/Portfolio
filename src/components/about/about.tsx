@@ -12,7 +12,6 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import aboutLight from "../../assets/images/about/about-light.png";
 import abourtDark from "../../assets/images/about/about-dark.png";
-import { BoxCV, BoxTexts, Icon, LinkTextCV } from "../contact/styles";
 
 interface Props {
   toggleTheme(): void;
@@ -48,7 +47,7 @@ const About: React.FC<Props> = () => {
         </Description>
 
         <ContainerButtons>
-          <DownloadCvButton href="#contato">
+          <DownloadCvButton href={"/cv.pdf"} download="cv.pdf">
             <TextButton>Download CV</TextButton>
           </DownloadCvButton>
         </ContainerButtons>
