@@ -12,7 +12,6 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import aboutLight from "../../assets/images/about/about-light.png";
 import abourtDark from "../../assets/images/about/about-dark.png";
-// import cv from "../../../public/cv.pdf";
 
 interface Props {
   toggleTheme(): void;
