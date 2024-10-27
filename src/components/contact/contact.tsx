@@ -25,7 +25,8 @@ const Contact: React.FC<Props> = () => {
   const colors = themeContext ? themeContext.colors : { text: "#000" };
 
   const theme = useContext(ThemeContext);
-  const imageSrc = (theme?.title ?? 'light') === 'light' ? contactLight : contactDark;
+  const imageSrc =
+    (theme?.title ?? "light") === "light" ? contactLight : contactDark;
 
   AOS.init();
   return (
