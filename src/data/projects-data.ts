@@ -1,14 +1,15 @@
 import hi from "../assets/images/hi.png";
+import swiftpow from "../assets/projects/swiftpow.png";
 
 const ProjectsData = [
   {
     id: 1,
-    img: hi,
+    img: swiftpow,
     title: "Swift POW",
     description: "Organização sem fins lucrativos com o objetivo de ensinar conceitos, técnicas de desenvolvimento com Swift ",
     tool: "Swift",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
-    link: " ",
+    link: "https://www.instagram.com/swift.pow/",
   },
   {
     id: 2,
