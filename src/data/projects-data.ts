@@ -3,6 +3,7 @@ import salvae from "../assets/projects/salvae.png";
 import tcc from "../assets/projects/tcc.png";
 import viacep from "../assets/projects/via-cep.png";
 import yaris from "../assets/projects/yaris.png";
+import login from "../assets/projects/login.png";
 
 const ProjectsData = [
   {
@@ -46,6 +47,15 @@ const ProjectsData = [
     img: yaris,
     title: "Álcool ou Gasolina",
     description: "Aplicação que calcula qual é a melhor opção de abastecimento para o seu veículo, com base no preço do álcool e da gasolina.",
+    tool: "Swift",
+    github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
+    link: " ",
+  },
+  {
+    id: 6,
+    img: login,
+    title: "Login - Firebase",
+    description: "Aplicação que realiza o Cadastro e login de um usuário utilizando o Firebase.",
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
     link: " ",
