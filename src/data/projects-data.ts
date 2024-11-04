@@ -1,6 +1,7 @@
 import swiftpow from "../assets/projects/swiftpow.png";
 import salvae from "../assets/projects/salvae.png";
 import tcc from "../assets/projects/tcc.png";
+import viacep from "../assets/projects/via-cep.png";
 
 const ProjectsData = [
   {
@@ -32,7 +33,7 @@ const ProjectsData = [
   },
   {
     id: 4,
-    img: salvae,
+    img: viacep,
     title: "Via CEP",
     description: "Aplicação que consome a API do Via CEP, para mostrar informações de endereços com base no CEP inserido.",
     tool: "Swift",
