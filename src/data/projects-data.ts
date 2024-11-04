@@ -2,6 +2,7 @@ import swiftpow from "../assets/projects/swiftpow.png";
 import salvae from "../assets/projects/salvae.png";
 import tcc from "../assets/projects/tcc.png";
 import viacep from "../assets/projects/via-cep.png";
+import yaris from "../assets/projects/yaris.png";
 
 const ProjectsData = [
   {
@@ -42,11 +43,11 @@ const ProjectsData = [
   },
   {
     id: 5,
-    img: salvae,
-    title: "Login",
-    description: "Aplicação que permite o usuário realizar cadastro e login, com autenticação via Firebase.",
+    img: yaris,
+    title: "Álcool ou Gasolina",
+    description: "Aplicação que calcula qual é a melhor opção de abastecimento para o seu veículo, com base no preço do álcool e da gasolina.",
     tool: "Swift",
-    github: "https://github.com/Swift-P-O-W/app-login",
+    github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
     link: " ",
   },
 ];
