@@ -1,6 +1,4 @@
-import hi from "../assets/images/hi.png";
 import swiftpow from "../assets/projects/swiftpow.png";
-import teste from "../assets/projects/teste.png";
 import salvae from "../assets/projects/salvae.png";
 
 const ProjectsData = [
@@ -24,7 +22,7 @@ const ProjectsData = [
   },
   {
     id: 3,
-    img: teste,
+    img: salvae,
     title: "TCC Moedas",
     description: "Projeto de conclusão de curso, onde foi desenvolvido uma aplicação que consome dados da API HG Brasil, para mostrar valores de moedas em tempo real e simulação de compra e venda.",
     tool: "Swift",
@@ -33,7 +31,7 @@ const ProjectsData = [
   },
   {
     id: 4,
-    img: hi,
+    img: salvae,
     title: "Via CEP",
     description: "Aplicação que consome a API do Via CEP, para mostrar informações de endereços com base no CEP inserido.",
     tool: "Swift",
@@ -42,7 +40,7 @@ const ProjectsData = [
   },
   {
     id: 5,
-    img: hi,
+    img: salvae,
     title: "Login",
     description: "Aplicação que permite o usuário realizar cadastro e login, com autenticação via Firebase.",
     tool: "Swift",
