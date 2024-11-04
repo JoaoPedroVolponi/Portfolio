@@ -1,5 +1,7 @@
 import hi from "../assets/images/hi.png";
 import swiftpow from "../assets/projects/swiftpow.png";
+import teste from "../assets/projects/teste.png";
+import salvae from "../assets/projects/salvae.png";
 
 const ProjectsData = [
   {
@@ -13,7 +15,7 @@ const ProjectsData = [
   },
   {
     id: 2,
-    img: hi,
+    img: salvae,
     title: "salvAÊ",
     description: "Um Tour Gastronômico por Maringá que te oferece um produto em dobro em diversos estabelecimentos selecionados, o que te garante uma economia de mais de R$4.000,00.",
     tool: "React Native",
@@ -22,7 +24,7 @@ const ProjectsData = [
   },
   {
     id: 3,
-    img: hi,
+    img: teste,
     title: "TCC Moedas",
     description: "Projeto de conclusão de curso, onde foi desenvolvido uma aplicação que consome dados da API HG Brasil, para mostrar valores de moedas em tempo real e simulação de compra e venda.",
     tool: "Swift",
