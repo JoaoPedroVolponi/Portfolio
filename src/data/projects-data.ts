@@ -1,5 +1,6 @@
 import swiftpow from "../assets/projects/swiftpow.png";
 import salvae from "../assets/projects/salvae.png";
+import tcc from "../assets/projects/tcc.png";
 
 const ProjectsData = [
   {
@@ -22,7 +23,7 @@ const ProjectsData = [
   },
   {
     id: 3,
-    img: salvae,
+    img: tcc,
     title: "TCC Moedas",
     description: "Projeto de conclusão de curso, onde foi desenvolvido uma aplicação que consome dados da API HG Brasil, para mostrar valores de moedas em tempo real e simulação de compra e venda.",
     tool: "Swift",
