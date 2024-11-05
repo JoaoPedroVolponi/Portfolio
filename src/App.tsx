@@ -11,7 +11,7 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 
 function App() {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light);
