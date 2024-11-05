@@ -57,7 +57,7 @@ const ProjectsData = [
     title: "Login - Firebase",
     description: "Aplicação que realiza o Cadastro e login de um usuário utilizando o Firebase.",
     tool: "Swift",
-    github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
+    github: "https://github.com/Swift-P-O-W/app-login",
     link: " ",
   },
 ];
