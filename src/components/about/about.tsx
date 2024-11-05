@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import aboutLight from "../../assets/images/about/about-light.png";
 import abourtDark from "../../assets/images/about/about-dark.png";
+import { urls } from "../../utils/urls";
 
 interface Props {
   toggleTheme(): void;
@@ -31,13 +32,12 @@ const About: React.FC<Props> = () => {
         <SubTitle>Sobre mim</SubTitle>
 
         <Description>
-          Engenheiro de Software com vasta experiência em desenvolvimento de
+          Engenheiro de Software com experiência em desenvolvimento de
           aplicações robustas e escaláveis.
         </Description>
         <Description>
-          Atualmente, atuo como desenvolvedor iOS no Itaú Unibanco, onde
-          contribuo para a criação de soluções inovadoras e de alta qualidade
-          para o setor financeiro.
+          Atualmente, atuo como desenvolvedor mobile com foco em desenvolvimento iOS, onde
+          contribuo para a criação de soluções inovadoras e de alta qualidade.
         </Description>
         <Description>
           Tenho um forte foco em aprender novas tecnologias e aprimorar minhas
@@ -47,7 +47,7 @@ const About: React.FC<Props> = () => {
         </Description>
 
         <ContainerButtons>
-          <DownloadCvButton href={"/cv.pdf"} download="cv.pdf">
+          <DownloadCvButton href={urls.cv} target="blank">
             <TextButton>Download CV</TextButton>
           </DownloadCvButton>
         </ContainerButtons>
