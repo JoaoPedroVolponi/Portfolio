@@ -3,6 +3,7 @@ import salvae from "../assets/projects/salvae.png";
 import tcc from "../assets/projects/tcc.png";
 import viacep from "../assets/projects/via-cep.png";
 import yaris from "../assets/projects/yaris.png";
+import brasileirao from "../assets/projects/brasileirao.png";
 import login from "../assets/projects/login.png";
 
 const ProjectsData = [
@@ -53,6 +54,15 @@ const ProjectsData = [
   },
   {
     id: 6,
+    img: brasileirao,
+    title: "Brasileirão",
+    description: "Aplicação que consome a API Futebol e demonstra a tabela de classificação do Campeonato Brasileiro.",
+    tool: "Swift",
+    github: "https://github.com/JoaoPedroVolponi/Brasileirao",
+    link: " ",
+  },
+  {
+    id: 7,
     img: login,
     title: "Login - Firebase",
     description: "Aplicação que realiza o Cadastro e login de um usuário utilizando o Firebase.",
