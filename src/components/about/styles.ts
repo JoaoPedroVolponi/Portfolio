@@ -20,13 +20,37 @@ export const ContainerAbout = styled.div`
 
 export const Image = styled.img`
   height: 20vw;
-
-  @media screen and (max-width: 645px) {
-    width: 77vw;
+  
+  @media screen and (max-width: 980px) {
+    position: static;
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto 0;
   }
 
-  @media screen and (max-width: 980px) {
-    display: none;
+  animation: float 10s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-25px);
+    }
+    40% {
+      transform: translateX(-25px);
+    }
+    60% {
+      transform: translateY(-25px);
+    }
+    80% {
+      transform: translateX(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 `;
 

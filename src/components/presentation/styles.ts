@@ -34,14 +34,18 @@ export const ContainerMe = styled.div`
 `;
 
 export const TextName = styled.span`
-  color: ${(props) => props.theme.colors.text};
+  color: ${props => props.theme.colors.text};
   font-weight: 700;
   font-size: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 
-  @media screen and (max-width: 536px) {
-    font-size: 9.3vw;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
   }
 `;
 
