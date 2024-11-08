@@ -159,8 +159,13 @@ export const Imagem = styled.img`
   left: 60%;
   height: 20vw;
 
-  @media screen and (max-width: 980px) {
-    display: none;
+ @media screen and (max-width: 980px) {
+    position: static;
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto 0;
   }
 
   animation: float 10s ease-in-out infinite;
