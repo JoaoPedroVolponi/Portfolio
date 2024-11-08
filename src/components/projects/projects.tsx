@@ -29,33 +29,29 @@ interface Props {
 const Projects: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   const colors = themeContext ? themeContext.colors : { text: "#000" };
+  let numberOfProjects;
 
   AOS.init();
-  const [controller, setController] = useState(false);
+  const [toggleProjects, setToggleProjects] = useState(false);
 
   function seeMore() {
-    setController(!controller);
+    setToggleProjects(!toggleProjects);
   }
-  let teste;
 
-  if (controller == true) {
-    teste = Infinity;
+  if (toggleProjects === true) {
+    numberOfProjects = Infinity;
   } else {
-    teste = 3;
+    numberOfProjects = 3;
   }
 
   return (
     <ContainerProjects id="projetos">
       <SubContainerProjects>
         <SubTitle>Projetos pessoais</SubTitle>
-
-        <ButtonSeeMore onClick={seeMore}>
-          <TextSeeMore>{controller ? "Ver menos" : "Ver mais"}</TextSeeMore>
-        </ButtonSeeMore>
       </SubContainerProjects>
 
       <ContainerAllProjects>
-        {ProjectsData.slice(0, teste).map((item) => {
+        {ProjectsData.slice(0, numberOfProjects).map((item) => {
           const { id, img, title, description, tool, link, github } = item;
           return (
             <Project key={id} data-aos="zoom-in">
@@ -85,6 +81,10 @@ const Projects: React.FC<Props> = () => {
           );
         })}
       </ContainerAllProjects>
+
+      <ButtonSeeMore onClick={seeMore}>
+        <TextSeeMore>{toggleProjects ? "Ver menos" : "Ver mais"}</TextSeeMore>
+      </ButtonSeeMore>
     </ContainerProjects>
   );
 };
