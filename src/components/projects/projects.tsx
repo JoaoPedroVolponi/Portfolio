@@ -29,19 +29,13 @@ interface Props {
 const Projects: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   const colors = themeContext ? themeContext.colors : { text: "#000" };
-  let numberOfProjects;
+  const [toggleProjects, setToggleProjects] = useState(false);
+  const numberOfProjects = toggleProjects ? Infinity : 3;
 
   AOS.init();
-  const [toggleProjects, setToggleProjects] = useState(false);
 
   function seeMore() {
     setToggleProjects(!toggleProjects);
-  }
-
-  if (toggleProjects === true) {
-    numberOfProjects = Infinity;
-  } else {
-    numberOfProjects = 3;
   }
 
   return (
