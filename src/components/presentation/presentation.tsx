@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { ContainerPresentation, ContainerMe, TextName, SubText, Navigations, TextNavs, Imagem, SwitchContainer } from './styles';
 import presentationLight from '../../assets/images/presentation/presentation-light.png';
 import presentationDark from '../../assets/images/presentation/presentation-dark.png';
+import { urls } from '../../utils/urls';
 
 interface Props {
     toggleTheme(): void;
@@ -56,6 +57,7 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
             <Navigations>
                 <TextNavs href="#sobre">Sobre</TextNavs>
                 <TextNavs href="#projetos">Projetos</TextNavs>
+                <TextNavs href={urls.medium} target="blank">Artigos</TextNavs>
                 <TextNavs href="#contato">Contato</TextNavs>
             </Navigations>
             <Imagem src={imageSrc}/>
