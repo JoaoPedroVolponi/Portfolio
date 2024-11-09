@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import "@fontsource/space-grotesk";
 
-// Definindo a animação de fade-out
 const fadeOut = keyframes`
   from {
     opacity: 1;
