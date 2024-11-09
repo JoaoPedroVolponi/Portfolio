@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { ThemeContext } from "styled-components";
 import ProjectsData from "../../data/projects-data";
 import {
@@ -30,12 +30,25 @@ const Projects: React.FC<Props> = () => {
   const themeContext = useContext(ThemeContext);
   const colors = themeContext ? themeContext.colors : { text: "#000" };
   const [toggleProjects, setToggleProjects] = useState(false);
-  const numberOfProjects = toggleProjects ? Infinity : 3;
+  const [closing, setClosing] = useState(false);
+  const lastProjectRef = useRef<HTMLDivElement | null>(null);
+  const numberOfProjects = toggleProjects ? ProjectsData.length : 3;
 
   AOS.init();
 
   function seeMore() {
-    setToggleProjects(!toggleProjects);
+    if (toggleProjects) {
+      setClosing(true);
+      setTimeout(() => {
+        setToggleProjects(false);
+        setClosing(false);
+        if (lastProjectRef.current) {
+          lastProjectRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500);
+    } else {
+      setToggleProjects(true);
+    }
   }
 
   return (
@@ -44,11 +57,16 @@ const Projects: React.FC<Props> = () => {
         <SubTitle>Projetos pessoais</SubTitle>
       </SubContainerProjects>
 
-      <ContainerAllProjects>
-        {ProjectsData.slice(0, numberOfProjects).map((item) => {
+      <ContainerAllProjects className={closing ? 'fade-out' : ''}>
+        {ProjectsData.slice(0, numberOfProjects).map((item, index) => {
           const { id, img, title, description, tool, link, github } = item;
+          const isLastProject = index === numberOfProjects - 1;
           return (
-            <Project key={id} data-aos="zoom-in">
+            <Project
+              key={id}
+              data-aos="zoom-in"
+              ref={isLastProject ? lastProjectRef : null}
+            >
               <BoxImage>
                 <Image src={img} />
               </BoxImage>
