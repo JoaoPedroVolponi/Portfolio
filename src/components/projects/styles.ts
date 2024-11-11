@@ -1,5 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import "@fontsource/space-grotesk";
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
 export const ContainerProjects = styled.div`
   display: flex;
@@ -16,7 +25,6 @@ export const SubContainerProjects = styled.div`
 
   @media screen and (max-width: 630px) {
     flex-direction: column;
-
     align-items: baseline;
   }
 `;
@@ -63,6 +71,10 @@ export const ContainerAllProjects = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+
+  &.fade-out {
+    animation: ${fadeOut} 0.5s forwards;
+  }
 `;
 
 export const Project = styled.div`
