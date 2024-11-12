@@ -9,7 +9,7 @@ export const ContainerPresentation = styled.div`
   background: ${(props) => props.theme.colors.backgroundpresentation};
   gap: 20px;
   padding: 0 20%;
-  position: relative; /* Adicionado para permitir posicionamento absoluto dos filhos */
+  position: relative;
 
   @media screen and (max-width: 780px) {
     background: ${(props) => props.theme.colors.backgroundpresentation780};
@@ -68,7 +68,7 @@ export const Navigations = styled.div`
   flex-wrap: wrap;
 
   @media screen and (max-width: 480px) {
-    gap: 15px; /* Ajuste o valor conforme necessário */
+    gap: 15px;
   }
 `;
 
