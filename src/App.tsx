@@ -11,6 +11,7 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import AllProjects from "./components/all-projects/all-projects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AppContainer } from "./styles";
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark);
@@ -19,34 +20,45 @@ function App() {
     setTheme(theme.title === "light" ? dark : light);
   };
 
-return (
-  <ThemeProvider theme={theme}>
-    <Router>
-      <GlobalStyle />
-      <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px" }}>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Presentation toggleTheme={toggleTheme} />
-                <About toggleTheme={toggleTheme} />
-                <Technologies toggleTheme={toggleTheme} />
-                <Projects toggleTheme={toggleTheme} />
-                <Contact toggleTheme={toggleTheme} />
-                <Footer toggleTheme={toggleTheme} />
-              </>
-            }
-          />
-          <Route
-            path="/all-projects"
-            element={<AllProjects toggleTheme={toggleTheme} />}
-          />
-        </Routes>
-      </div>
-    </Router>
-  </ThemeProvider>
-);
+  return (
+    <ThemeProvider theme={theme}>
+      <Router>
+        <GlobalStyle />
+        <AppContainer>
+          <Routes>
+            <Route
+              path="/"
+              element={<Presentation toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/about"
+              element={<About toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/technologies"
+              element={<Technologies toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/projects"
+              element={<Projects toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/footer"
+              element={<Footer toggleTheme={toggleTheme} />}
+            />
+            <Route
+              path="/all-projects"
+              element={<AllProjects toggleTheme={toggleTheme} />}
+            />
+          </Routes>
+        </AppContainer>
+      </Router>
+    </ThemeProvider>
+  );
 }
 
 export default App;

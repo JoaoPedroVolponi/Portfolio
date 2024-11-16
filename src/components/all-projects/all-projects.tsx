@@ -24,6 +24,7 @@ import "aos/dist/aos.css";
 import { FiExternalLink, FiArrowLeft } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   toggleTheme(): void;
@@ -33,13 +34,16 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
   const themeContext = useContext(ThemeContext);
   const title = themeContext?.title || "default";
   const colors = themeContext ? themeContext.colors : { text: "#000" };
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, [themeContext]);
 
-  const handleBackClick = () => {};
+  const handleBackClick = () => {
+    navigate("/projects");
+  };
 
   return (
     <ContainerProjects id="todosprojetos">
