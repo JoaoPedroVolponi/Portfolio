@@ -23,6 +23,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   toggleTheme(): void;
@@ -37,6 +38,7 @@ const Projects: React.FC<Props> = () => {
   const numberOfProjects = toggleProjects
     ? Math.min(ProjectsData.length, 6)
     : 3;
+  const navigate = useNavigate();
 
   AOS.init();
 
@@ -53,6 +55,10 @@ const Projects: React.FC<Props> = () => {
     } else {
       setToggleProjects(true);
     }
+  }
+
+  function seeAll() {
+    navigate("/all-projects");
   }
 
   return (
@@ -102,7 +108,7 @@ const Projects: React.FC<Props> = () => {
           <TextSeeMore>{toggleProjects ? "Ver menos" : "Ver mais"}</TextSeeMore>
         </ButtonSeeMore>
 
-        <ButtonSeeAll onClick={seeMore}>
+        <ButtonSeeAll onClick={seeAll}>
           <TextSeeMore>Ver todos</TextSeeMore>
         </ButtonSeeAll>
       </ButtonContainer>
