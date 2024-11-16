@@ -16,6 +16,8 @@ import {
   TitleProject,
   Description,
   Tools,
+  ButtonContainer,
+  ButtonSeeAll,
 } from "./styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +34,9 @@ const Projects: React.FC<Props> = () => {
   const [toggleProjects, setToggleProjects] = useState(false);
   const [closing, setClosing] = useState(false);
   const projectRef = useRef<{ [key: number]: HTMLDivElement | null }>({});
-  const numberOfProjects = toggleProjects ? Math.min(ProjectsData.length, 6) : 3;
+  const numberOfProjects = toggleProjects
+    ? Math.min(ProjectsData.length, 6)
+    : 3;
 
   AOS.init();
 
@@ -93,9 +97,15 @@ const Projects: React.FC<Props> = () => {
         })}
       </ContainerAllProjects>
 
-      <ButtonSeeMore onClick={seeMore}>
-        <TextSeeMore>{toggleProjects ? "Ver menos" : "Ver mais"}</TextSeeMore>
-      </ButtonSeeMore>
+      <ButtonContainer>
+        <ButtonSeeMore onClick={seeMore}>
+          <TextSeeMore>{toggleProjects ? "Ver menos" : "Ver mais"}</TextSeeMore>
+        </ButtonSeeMore>
+
+        <ButtonSeeAll onClick={seeMore}>
+          <TextSeeMore>Ver todos</TextSeeMore>
+        </ButtonSeeAll>
+      </ButtonContainer>
     </ContainerProjects>
   );
 };

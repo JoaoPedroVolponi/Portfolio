@@ -41,6 +41,13 @@ export const SubTitle = styled.span`
   }
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
+
 export const ButtonSeeMore = styled.button`
   display: flex;
   justify-content: center;
@@ -50,7 +57,23 @@ export const ButtonSeeMore = styled.button`
   border: 1px solid ${(props) => props.theme.colors.text};
   height: 30px;
   width: 110px;
-  align-self: right;
+  border-radius: 5px;
+
+  &:hover,
+  :focus {
+    border: 1px solid #37a2d8;
+  }
+`;
+
+export const ButtonSeeAll = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: ${(props) => props.theme.colors.background};
+  border: 1px solid ${(props) => props.theme.colors.text};
+  height: 30px;
+  width: 110px;
   border-radius: 5px;
 
   &:hover,
