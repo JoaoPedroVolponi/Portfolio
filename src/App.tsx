@@ -23,7 +23,7 @@ return (
   <ThemeProvider theme={theme}>
     <Router>
       <GlobalStyle />
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 16px" }}>
+      <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px" }}>
         <Routes>
           <Route
             path="/"

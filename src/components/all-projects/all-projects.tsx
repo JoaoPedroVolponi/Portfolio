@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import Switch from 'react-switch';
+import React, { useContext, useEffect } from "react";
+import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import ProjectsData from "../../data/projects-data";
 import {
@@ -15,11 +15,13 @@ import {
   TitleProject,
   Description,
   Tools,
-  SwitchContainer
+  SwitchContainer,
+  BackButtonContainer,
+  BackButton,
 } from "./styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiArrowLeft } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 
@@ -29,28 +31,38 @@ interface Props {
 
 const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
   const themeContext = useContext(ThemeContext);
-  const title = themeContext?.title || 'default';
+  const title = themeContext?.title || "default";
   const colors = themeContext ? themeContext.colors : { text: "#000" };
 
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [themeContext]);
+
+  const handleBackClick = () => {};
 
   return (
     <ContainerProjects id="todosprojetos">
       <SwitchContainer>
         <Switch
           onChange={toggleTheme}
-          checked={title === 'light'}
+          checked={title === "light"}
           checkedIcon={false}
           uncheckedIcon={false}
           handleDiameter={20}
           offHandleColor=""
-          uncheckedHandleIcon={<FaMoon color='#2E2F31' size={20} />}
+          uncheckedHandleIcon={<FaMoon color="#2E2F31" size={20} />}
           onHandleColor="#DCE0E2"
           offColor="#DCE0E2"
           onColor="#2E2F31"
           activeBoxShadow="0 0 2px 3px #33bbff0"
         />
       </SwitchContainer>
+      <BackButtonContainer>
+        <BackButton onClick={handleBackClick}>
+          <FiArrowLeft size={30} color={colors.text} />
+        </BackButton>
+      </BackButtonContainer>
       <SubContainerProjects>
         <SubTitle>Todos os Projetos</SubTitle>
       </SubContainerProjects>

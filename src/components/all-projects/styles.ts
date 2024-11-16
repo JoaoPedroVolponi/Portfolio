@@ -17,6 +17,30 @@ const fadeOut = keyframes`
   }
 `;
 
+export const BackButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+`;
+
+export const BackButton = styled.button`
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+
+  span {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const ContainerProjects = styled.div`
   display: flex;
   flex-direction: column;
