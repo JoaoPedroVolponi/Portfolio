@@ -32,16 +32,13 @@ const Projects: React.FC<Props> = () => {
   const [toggleProjects, setToggleProjects] = useState(false);
   const [closing, setClosing] = useState(false);
   const projectRef = useRef<{ [key: number]: HTMLDivElement | null }>({});
-  const numberOfProjects = toggleProjects ? ProjectsData.length : 3;
+  const numberOfProjects = toggleProjects ? Math.min(ProjectsData.length, 6) : 3;
 
   AOS.init();
 
   function seeMore() {
     if (toggleProjects) {
       setClosing(true);
-      if (projectRef.current[3]) {
-        projectRef.current[3].scrollIntoView({ behavior: "smooth" });
-      }
       setTimeout(() => {
         setToggleProjects(false);
         setClosing(false);
