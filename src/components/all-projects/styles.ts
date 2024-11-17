@@ -1,12 +1,43 @@
 import styled, { keyframes } from "styled-components";
 import "@fontsource/space-grotesk";
 
+export const SwitchContainer = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: background-color 0.5s ease; /* Adiciona transição suave */
+`;
+
 const fadeOut = keyframes`
   from {
     opacity: 1;
   }
   to {
     opacity: 0;
+  }
+`;
+
+export const BackButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+`;
+
+export const BackButton = styled.button`
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+
+  span {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
