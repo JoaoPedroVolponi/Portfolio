@@ -8,7 +8,6 @@
 
 ## ▶️ Funcionalidades
 - Portfólio - joaopedrovolponi.com
-- Endereço completo com base no CEP/
 
 ### 📱 Capturas de tela do aplicativo
 
