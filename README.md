@@ -5,9 +5,13 @@
 
 ## 🛠️ Tecnologias e Ferramentas
 - React
+- Typescript
 
 ## ▶️ Funcionalidades
-- Portfólio - joaopedrovolponi.com
+- Apresentação
+- Sobre
+- Projetos
+- Contato
 
 ### 📱 Capturas de tela do aplicativo
 
