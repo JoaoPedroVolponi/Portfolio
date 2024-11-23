@@ -6,6 +6,7 @@
 ## 🛠️ Tecnologias e Ferramentas
 - React
 - Typescript
+- Vercel
 
 ## ▶️ Funcionalidades
 - Apresentação
@@ -15,7 +16,6 @@
 
 ### 📱 Deploy:
  - https://www.joaopedrovolponi.com/
- - Vercel
 
 ## ✨ Autor
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
