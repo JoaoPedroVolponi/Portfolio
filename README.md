@@ -15,6 +15,7 @@
 
 ### 📱 Deploy:
  - https://www.joaopedrovolponi.com/
+ - Vercel
 
 ## ✨ Autor
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
