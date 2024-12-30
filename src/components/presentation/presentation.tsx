@@ -7,6 +7,7 @@ import { ContainerPresentation, ContainerMe, TextName, SubText, Navigations, Tex
 import presentationLight from '../../assets/images/presentation/presentation-light.png';
 import presentationDark from '../../assets/images/presentation/presentation-dark.png';
 import { urls } from '../../utils/urls';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
     toggleTheme(): void;
@@ -15,9 +16,13 @@ interface Props {
 const Presentation: React.FC<Props> = ({ toggleTheme }) => {
     const themeContext = useContext(ThemeContext);
     const title = themeContext?.title || 'default';
-
     const theme = useContext(ThemeContext);
     const imageSrc = (theme?.title ?? 'light') === 'light' ? presentationLight : presentationDark;
+    const navigate = useNavigate();
+    
+    function handleSobre() {
+        navigate("/sobre");
+    }
 
     return (
         <ContainerPresentation>
@@ -55,7 +60,7 @@ const Presentation: React.FC<Props> = ({ toggleTheme }) => {
                 </SubText>
             </ContainerMe>
             <Navigations>
-                <TextNavs href="#sobre">Sobre</TextNavs>
+                <TextNavs onClick={handleSobre}>Sobre</TextNavs>
                 <TextNavs href="#projetos">Projetos</TextNavs>
                 <TextNavs href={urls.medium} target="blank">Artigos</TextNavs>
                 <TextNavs href="#contato">Contato</TextNavs>
