@@ -196,3 +196,20 @@ export const Tools = styled.span`
   color: ${(props) => props.theme.colors.secundary};
   margin: 20px 30px 30px 30px;
 `;
+
+export const FilterButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+`;
+
+export const FilterButton = styled.a`
+  display: flex;
+  border: 1px solid #37a2d8;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+`;

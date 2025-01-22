@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import ProjectsData from "../../data/projects-data";
@@ -18,6 +18,8 @@ import {
   SwitchContainer,
   BackButtonContainer,
   BackButton,
+  FilterButtonContainer,
+  FilterButton,
 } from "./styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,6 +37,7 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
   const title = themeContext?.title || "default";
   const colors = themeContext ? themeContext.colors : { text: "#000" };
   const navigate = useNavigate();
+  const [filter, setFilter] = useState<string | null>(null);
 
   useEffect(() => {
     AOS.init();
@@ -44,6 +47,10 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
   const handleBackClick = () => {
     navigate("/projects");
   };
+
+  const filteredProjects = filter
+    ? ProjectsData.filter((project) => project.platform === filter)
+    : ProjectsData;
 
   return (
     <ContainerProjects id="todosprojetos">
@@ -67,12 +74,17 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
           <FiArrowLeft size={30} color={colors.text} />
         </BackButton>
       </BackButtonContainer>
+      <FilterButtonContainer>
+        <FilterButton onClick={() => setFilter("mobile")}>Mobile</FilterButton>
+        <FilterButton onClick={() => setFilter("web")}>Web</FilterButton>
+        <FilterButton onClick={() => setFilter(null)}>Todos</FilterButton>
+      </FilterButtonContainer>
       <SubContainerProjects>
         <SubTitle>Todos os Projetos</SubTitle>
       </SubContainerProjects>
 
       <ContainerAllProjects>
-        {ProjectsData.map((item) => {
+        {filteredProjects.map((item) => {
           const { id, img, title, description, tool, link, github } = item;
           return (
             <Project key={id} data-aos="zoom-in">

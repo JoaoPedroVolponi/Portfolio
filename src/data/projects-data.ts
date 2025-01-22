@@ -5,6 +5,7 @@ import viacep from "../assets/projects/via-cep.png";
 import yaris from "../assets/projects/yaris.png";
 import brasileirao from "../assets/projects/brasileirao.png";
 import login from "../assets/projects/login.png";
+import { platform } from "os";
 
 const ProjectsData = [
   {
@@ -15,6 +16,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
     link: "https://www.instagram.com/swift.pow/",
+    platform: "mobile",
   },
   {
     id: 2,
@@ -24,6 +26,7 @@ const ProjectsData = [
     tool: "React Native",
     github: " ",
     link: "https://www.salvae.com.br/",
+    platform: "mobile",
   },
   {
     id: 3,
@@ -33,6 +36,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/TCC",
     link: " ",
+    platform: "mobile",
   },
   {
     id: 4,
@@ -42,6 +46,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/Via-CEP",
     link: " ",
+    platform: "mobile",
   },
   {
     id: 5,
@@ -51,6 +56,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
     link: " ",
+    platform: "mobile",
   },
   {
     id: 6,
@@ -60,6 +66,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/Brasileirao",
     link: " ",
+    platform: "mobile",
   },
   {
     id: 7,
@@ -69,6 +76,7 @@ const ProjectsData = [
     tool: "Swift",
     github: "https://github.com/Swift-P-O-W/app-login",
     link: " ",
+    platform: "web",
   },
 ];
 
