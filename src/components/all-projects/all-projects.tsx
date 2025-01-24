@@ -74,14 +74,15 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
           <FiArrowLeft size={30} color={colors.text} />
         </BackButton>
       </BackButtonContainer>
+      <SubContainerProjects>
+        <SubTitle>Quais projetos você gostaria de ver?</SubTitle>
+      </SubContainerProjects>
+
       <FilterButtonContainer>
         <FilterButton onClick={() => setFilter("mobile")}>Mobile</FilterButton>
         <FilterButton onClick={() => setFilter("web")}>Web</FilterButton>
         <FilterButton onClick={() => setFilter(null)}>Todos</FilterButton>
       </FilterButtonContainer>
-      <SubContainerProjects>
-        <SubTitle>Todos os Projetos</SubTitle>
-      </SubContainerProjects>
 
       <ContainerAllProjects>
         {filteredProjects.map((item) => {

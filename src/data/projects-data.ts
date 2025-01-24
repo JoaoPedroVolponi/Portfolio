@@ -5,7 +5,6 @@ import viacep from "../assets/projects/via-cep.png";
 import yaris from "../assets/projects/yaris.png";
 import brasileirao from "../assets/projects/brasileirao.png";
 import login from "../assets/projects/login.png";
-import { platform } from "os";
 
 const ProjectsData = [
   {
@@ -13,7 +12,7 @@ const ProjectsData = [
     img: swiftpow,
     title: "Swift POW",
     description: "Organização sem fins lucrativos com o objetivo de ensinar conceitos, técnicas de desenvolvimento com Swift ",
-    tool: "Swift",
+    tool: "Swift - Mobile",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
     link: "https://www.instagram.com/swift.pow/",
     platform: "mobile",

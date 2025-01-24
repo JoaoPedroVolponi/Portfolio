@@ -5,11 +5,11 @@ const TechlogiesData = [
     },
     {
         "id": 2,
-        "name": "React Native"
+        "name": "Angular"
     },
     {
         "id": 3,
-        "name": "React"
+        "name": "React | React Native"
     },
     {
         "id": 4,
