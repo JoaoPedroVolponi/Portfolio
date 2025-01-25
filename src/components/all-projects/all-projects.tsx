@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
-import ProjectsData from "../../data/projects-data";
+import ProjectsDataMobile from "../../data/projects-data-mobile";
+import ProjectsDataWeb from "../../data/projects-data-web";
 import {
   ContainerProjects,
   SubContainerProjects,
@@ -19,7 +20,8 @@ import {
   BackButtonContainer,
   BackButton,
   FilterButtonContainer,
-  FilterButton,
+  TextSeeMore,
+  ButtonSeeAll,
 } from "./styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,7 +39,7 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
   const title = themeContext?.title || "default";
   const colors = themeContext ? themeContext.colors : { text: "#000" };
   const navigate = useNavigate();
-  const [filter, setFilter] = useState<string | null>(null);
+  const [filters, setFilters] = useState<string[]>([]);
 
   useEffect(() => {
     AOS.init();
@@ -48,9 +50,30 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
     navigate("/projects");
   };
 
-  const filteredProjects = filter
-    ? ProjectsData.filter((project) => project.platform === filter)
-    : ProjectsData;
+  const handleFilterClick = (filterType: string) => {
+    setFilters((prevFilters) =>
+      prevFilters.includes(filterType)
+        ? prevFilters.filter((filter) => filter !== filterType)
+        : [...prevFilters, filterType]
+    );
+  };
+
+  const getFilteredProjects = () => {
+    if (filters.length === 0) {
+      return [...ProjectsDataMobile, ...ProjectsDataWeb];
+    }
+
+    let filteredProjects: any[] = [];
+    if (filters.includes("mobile")) {
+      filteredProjects = [...filteredProjects, ...ProjectsDataMobile];
+    }
+    if (filters.includes("web")) {
+      filteredProjects = [...filteredProjects, ...ProjectsDataWeb];
+    }
+    return filteredProjects;
+  };
+
+  const filteredProjects = getFilteredProjects();
 
   return (
     <ContainerProjects id="todosprojetos">
@@ -79,9 +102,19 @@ const AllProjects: React.FC<Props> = ({ toggleTheme }) => {
       </SubContainerProjects>
 
       <FilterButtonContainer>
-        <FilterButton onClick={() => setFilter("mobile")}>Mobile</FilterButton>
-        <FilterButton onClick={() => setFilter("web")}>Web</FilterButton>
-        <FilterButton onClick={() => setFilter(null)}>Todos</FilterButton>
+        <ButtonSeeAll
+          isSelected={filters.includes("mobile")}
+          onClick={() => handleFilterClick("mobile")}
+        >
+          <TextSeeMore>Mobile</TextSeeMore>
+        </ButtonSeeAll>
+
+        <ButtonSeeAll
+          isSelected={filters.includes("web")}
+          onClick={() => handleFilterClick("web")}
+        >
+          <TextSeeMore>Web</TextSeeMore>
+        </ButtonSeeAll>
       </FilterButtonContainer>
 
       <ContainerAllProjects>
