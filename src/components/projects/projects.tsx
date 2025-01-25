@@ -15,9 +15,11 @@ import {
   SubContainerTitle,
   TitleProject,
   Description,
+  ToolsPlatformContainer, // Import the new styled component
   Tools,
   ButtonContainer,
   ButtonSeeAll,
+  Platform,
 } from "./styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -59,6 +61,7 @@ const Projects: React.FC<Props> = () => {
 
   function seeAll() {
     navigate("/all-projects");
+    // window.location.href = "https://www.joaopedrovolponi.com/all-projects";
   }
 
   return (
@@ -69,7 +72,7 @@ const Projects: React.FC<Props> = () => {
 
       <ContainerAllProjects className={closing ? "fade-out" : ""}>
         {ProjectsDataMain.slice(0, numberOfProjects).map((item, index) => {
-          const { id, img, title, description, tool, link, github } = item;
+          const { id, img, title, description, tool, link, github, platform } = item;
           return (
             <Project
               key={id}
@@ -97,7 +100,10 @@ const Projects: React.FC<Props> = () => {
               </ContainerTitle>
 
               <Description>{description}</Description>
-              <Tools>{tool}</Tools>
+              <ToolsPlatformContainer>
+                <Tools>{tool}</Tools>
+                <Platform>{platform}</Platform>
+              </ToolsPlatformContainer>
             </Project>
           );
         })}
