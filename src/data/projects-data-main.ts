@@ -15,7 +15,7 @@ const ProjectsDataMain = [
     tool: "Swift - Mobile",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
     link: "https://www.instagram.com/swift.pow/",
-    platform: "mobile",
+    platform: " ",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const ProjectsDataMain = [
     tool: "React Native",
     github: " ",
     link: "https://www.salvae.com.br/",
-    platform: "mobile",
+    platform: "Mobile",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const ProjectsDataMain = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/TCC",
     link: " ",
-    platform: "mobile",
+    platform: "Mobile",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const ProjectsDataMain = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/Via-CEP",
     link: " ",
-    platform: "mobile",
+    platform: "Mobile",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const ProjectsDataMain = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/AlcoolOuGasolina-Yaris",
     link: " ",
-    platform: "mobile",
+    platform: "Mobile",
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const ProjectsDataMain = [
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/Brasileirao",
     link: " ",
-    platform: "mobile",
+    platform: "Mobile",
   },
 ];
 
