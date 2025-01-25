@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { ThemeContext } from "styled-components";
-import ProjectsData from "../../data/projects-data";
+import ProjectsDataMain from "../../data/projects-data-main";
 import {
   ContainerProjects,
   SubContainerProjects,
@@ -36,7 +36,7 @@ const Projects: React.FC<Props> = () => {
   const [closing, setClosing] = useState(false);
   const projectRef = useRef<{ [key: number]: HTMLDivElement | null }>({});
   const numberOfProjects = toggleProjects
-    ? Math.min(ProjectsData.length, 6)
+    ? Math.min(ProjectsDataMain.length, 6)
     : 3;
   const navigate = useNavigate();
 
@@ -68,7 +68,7 @@ const Projects: React.FC<Props> = () => {
       </SubContainerProjects>
 
       <ContainerAllProjects className={closing ? "fade-out" : ""}>
-        {ProjectsData.slice(0, numberOfProjects).map((item, index) => {
+        {ProjectsDataMain.slice(0, numberOfProjects).map((item, index) => {
           const { id, img, title, description, tool, link, github } = item;
           return (
             <Project
