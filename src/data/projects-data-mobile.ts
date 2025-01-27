@@ -1,10 +1,10 @@
-import swiftpow from "../assets/projects/swiftpow.png";
-import salvae from "../assets/projects/salvae.png";
-import tcc from "../assets/projects/tcc.png";
-import viacep from "../assets/projects/via-cep.png";
-import yaris from "../assets/projects/yaris.png";
-import brasileirao from "../assets/projects/brasileirao.png";
-import login from "../assets/projects/login.png";
+import swiftpow from "../assets/projects/org/swiftpow.png";
+import salvae from "../assets/projects/mobile/salvae.png";
+import tcc from "../assets/projects/mobile/tcc.png";
+import viacep from "../assets/projects/mobile/via-cep.png";
+import yaris from "../assets/projects/mobile/yaris.png";
+import brasileirao from "../assets/projects/mobile/brasileirao.png";
+import login from "../assets/projects/mobile/login.png";
 
 const ProjectsDataMobile = [
   {
