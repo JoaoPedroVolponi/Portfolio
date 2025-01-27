@@ -158,10 +158,25 @@ export const Description = styled.span`
   word-spacing: -0.05em;
 `;
 
+export const ToolsPlatformContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+`;
+
 export const Tools = styled.span`
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: ${(props) => props.theme.colors.secundary};
-  margin: 20px 30px 30px 30px;
+  margin-left: 20px;
 `;
+
+export const Platform = styled.span`
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: ${(props) => props.theme.colors.secundary};
+  margin-right: 20px;
+`;
+

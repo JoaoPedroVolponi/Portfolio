@@ -5,7 +5,7 @@ export const SwitchContainer = styled.div`
   position: absolute;
   top: 20px;
   right: 20px;
-  transition: background-color 0.5s ease; /* Adiciona transição suave */
+  transition: background-color 0.5s ease;
 `;
 
 const fadeOut = keyframes`
@@ -96,12 +96,12 @@ export const ButtonSeeMore = styled.button`
   }
 `;
 
-export const ButtonSeeAll = styled.button`
+export const ButtonSeeAll = styled.button<{ isSelected: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => (props.isSelected ? '#5FA5F9' : props.theme.colors.background)};
   border: 1px solid ${(props) => props.theme.colors.text};
   height: 30px;
   width: 110px;
@@ -199,17 +199,7 @@ export const Tools = styled.span`
 
 export const FilterButtonContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 20px 0;
-`;
-
-export const FilterButton = styled.a`
-  display: flex;
-  border: 1px solid #37a2d8;
-  padding: 15px 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  width: fit-content;
-  transition: all 0.3s ease-in-out;
+  gap: 10px;
 `;
