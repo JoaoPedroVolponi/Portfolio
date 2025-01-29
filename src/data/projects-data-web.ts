@@ -1,4 +1,4 @@
-import swiftpow from "../assets/projects/swiftpow.png";
+import swiftpow from "../assets/projects/org/swiftpow.png";
 
 const ProjectsDataWeb = [
   {
