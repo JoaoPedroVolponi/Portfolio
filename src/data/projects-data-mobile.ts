@@ -67,6 +67,16 @@ const ProjectsDataMobile = [
     github: "https://github.com/JoaoPedroVolponi/Brasileirao",
     link: " ",
   },
+  {
+    id: 7,
+    img: login,
+    title: "Login",
+    description:
+      "Cadastro de usuário através do Firebase, com autenticação por e-mail e senha.",
+    tool: "Swift",
+    github: "https://github.com/JoaoPedroVolponi/Brasileirao",
+    link: " ",
+  },
 ];
 
 export default ProjectsDataMobile;
