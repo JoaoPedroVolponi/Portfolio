@@ -71,10 +71,9 @@ const ProjectsDataMobile = [
     id: 7,
     img: login,
     title: "Login",
-    description:
-      "Cadastro de usuário através do Firebase, com autenticação por e-mail e senha.",
+    description: "Cadastro de usuário através do Firebase, com autenticação por e-mail e senha.",
     tool: "Swift",
-    github: "https://github.com/JoaoPedroVolponi/Brasileirao",
+    github: "https://github.com/Swift-P-O-W/app-login",
     link: " ",
   },
 ];
