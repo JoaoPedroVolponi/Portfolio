@@ -1,14 +1,24 @@
-import swiftpow from "../assets/projects/swiftpow.png";
+import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
+import salvaeweb from "../assets/projects/web/salvae-web.png";
 
 const ProjectsDataWeb = [
   {
     id: 1,
-    img: swiftpow,
+    img: salvaeweb,
     title: "salvAÊ",
     description: "Página de demonstração do salvAÊ e área administrativa.",
     tool: "Angular",
     github: " ",
     link: "https://www.salvae.com.br/",
+  },
+  {
+    id: 2,
+    img: joaopedrovolponi,
+    title: "Portfólio João Pedro Volponi",
+    description: "Portfólio de Projetos",
+    tool: "React",
+    github: " ",
+    link: "https://joaopedrovolponi.com/",
   },
 ];
 

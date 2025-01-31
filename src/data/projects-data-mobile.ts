@@ -1,10 +1,10 @@
-import swiftpow from "../assets/projects/swiftpow.png";
-import salvae from "../assets/projects/salvae.png";
-import tcc from "../assets/projects/tcc.png";
-import viacep from "../assets/projects/via-cep.png";
-import yaris from "../assets/projects/yaris.png";
-import brasileirao from "../assets/projects/brasileirao.png";
-import login from "../assets/projects/login.png";
+import swiftpow from "../assets/projects/org/swiftpow.png";
+import salvae from "../assets/projects/mobile/salvae.png";
+import tcc from "../assets/projects/mobile/tcc.png";
+import viacep from "../assets/projects/mobile/via-cep.png";
+import yaris from "../assets/projects/mobile/yaris.png";
+import brasileirao from "../assets/projects/mobile/brasileirao.png";
+import login from "../assets/projects/mobile/login.png";
 
 const ProjectsDataMobile = [
   {
@@ -65,6 +65,15 @@ const ProjectsDataMobile = [
       "Aplicação que consome a API Futebol e demonstra a tabela de classificação do Campeonato Brasileiro.",
     tool: "Swift",
     github: "https://github.com/JoaoPedroVolponi/Brasileirao",
+    link: " ",
+  },
+  {
+    id: 7,
+    img: login,
+    title: "Login",
+    description: "Cadastro de usuário através do Firebase, com autenticação por e-mail e senha.",
+    tool: "Swift",
+    github: "https://github.com/Swift-P-O-W/app-login",
     link: " ",
   },
 ];

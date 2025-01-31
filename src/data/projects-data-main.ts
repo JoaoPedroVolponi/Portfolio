@@ -1,9 +1,11 @@
-import swiftpow from "../assets/projects/swiftpow.png";
-import salvae from "../assets/projects/salvae.png";
-import tcc from "../assets/projects/tcc.png";
-import viacep from "../assets/projects/via-cep.png";
-import yaris from "../assets/projects/yaris.png";
-import brasileirao from "../assets/projects/brasileirao.png";
+import swiftpow from "../assets/projects/org/swiftpow.png";
+import salvae from "../assets/projects/mobile/salvae.png";
+import tcc from "../assets/projects/mobile/tcc.png";
+import viacep from "../assets/projects/mobile/via-cep.png";
+import yaris from "../assets/projects/mobile/yaris.png";
+import brasileirao from "../assets/projects/mobile/brasileirao.png";
+import salvaeweb from "../assets/projects/web/salvae-web.png";
+import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
 
 const ProjectsDataMain = [
   {
@@ -12,7 +14,7 @@ const ProjectsDataMain = [
     title: "Swift POW",
     description:
       "Organização sem fins lucrativos com o objetivo de ensinar conceitos, técnicas de desenvolvimento com Swift ",
-    tool: "Swift - Mobile",
+    tool: "Organização",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
     link: "https://www.instagram.com/swift.pow/",
     platform: " ",
@@ -71,6 +73,27 @@ const ProjectsDataMain = [
     github: "https://github.com/JoaoPedroVolponi/Brasileirao",
     link: " ",
     platform: "Mobile",
+  },
+  {
+    id: 7,
+    img: salvaeweb,
+    title: "salvAÊ",
+    description: "Página de demonstração do salvAÊ e área administrativa.",
+    tool: "Angular",
+    github: " ",
+    link: "https://www.salvae.com.br/",
+    platform: "Web",
+  },
+  {
+    id: 8,
+    img: joaopedrovolponi,
+    title: "João Pedro Volponi",
+    description:
+      "Portfólio de Projetos",
+    tool: "React",
+    github: " ",
+    link: "https://joaopedrovolponi.com/",
+    platform: "Web",
   },
 ];
 
