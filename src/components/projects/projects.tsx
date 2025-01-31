@@ -15,7 +15,7 @@ import {
   SubContainerTitle,
   TitleProject,
   Description,
-  ToolsPlatformContainer, // Import the new styled component
+  ToolsPlatformContainer,
   Tools,
   ButtonContainer,
   ButtonSeeAll,
