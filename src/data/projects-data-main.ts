@@ -4,6 +4,8 @@ import tcc from "../assets/projects/mobile/tcc.png";
 import viacep from "../assets/projects/mobile/via-cep.png";
 import yaris from "../assets/projects/mobile/yaris.png";
 import brasileirao from "../assets/projects/mobile/brasileirao.png";
+import salvaeweb from "../assets/projects/web/salvae-web.png";
+import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
 
 const ProjectsDataMain = [
   {
@@ -74,10 +76,9 @@ const ProjectsDataMain = [
   },
   {
     id: 7,
-    img: brasileirao,
+    img: salvaeweb,
     title: "salvAÊ",
-    description:
-      "Página de demonstração do salvAÊ e área administrativa.",
+    description: "Página de demonstração do salvAÊ e área administrativa.",
     tool: "Angular",
     github: " ",
     link: "https://www.salvae.com.br/",
@@ -85,13 +86,13 @@ const ProjectsDataMain = [
   },
   {
     id: 8,
-    img: brasileirao,
-    title: "salvAÊ",
+    img: joaopedrovolponi,
+    title: "Enrique Machado",
     description:
-      "Página de demonstração do salvAÊ e área administrativa.",
+      "Portfólio de Streamer Enrique Machado, atualmente Streamer na Twitch de CS2",
     tool: "Angular",
     github: " ",
-    link: "https://www.salvae.com.br/",
+    link: "https://www.enriquemachado.com.br/",
     platform: "Web",
   },
 ];

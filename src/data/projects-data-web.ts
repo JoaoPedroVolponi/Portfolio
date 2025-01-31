@@ -4,7 +4,7 @@ import SalvaeWeb from "../assets/projects/web/salvae-web.png";
 const ProjectsDataWeb = [
   {
     id: 1,
-    img: JoaoPedroVolponi,
+    img: SalvaeWeb,
     title: "salvAÊ",
     description: "Página de demonstração do salvAÊ e área administrativa.",
     tool: "Angular",
@@ -13,12 +13,12 @@ const ProjectsDataWeb = [
   },
   {
     id: 2,
-    img: SalvaeWeb,
-    title: "salvAÊ",
-    description: "Página de demonstração do salvAÊ e área administrativa.",
-    tool: "Angular",
+    img: JoaoPedroVolponi,
+    title: "Portfólio João Pedro Volponi",
+    description: "Portfólio de Projetos",
+    tool: "React",
     github: " ",
-    link: "https://www.salvae.com.br/",
+    link: "https://joaopedrovolponi.com/",
   },
 ];
 
