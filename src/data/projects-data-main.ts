@@ -87,12 +87,12 @@ const ProjectsDataMain = [
   {
     id: 8,
     img: joaopedrovolponi,
-    title: "Enrique Machado",
+    title: "João Pedro Volponi",
     description:
-      "Portfólio de Streamer Enrique Machado, atualmente Streamer na Twitch de CS2",
-    tool: "Angular",
+      "Portfólio de Projetos",
+    tool: "React",
     github: " ",
-    link: "https://www.enriquemachado.com.br/",
+    link: "https://joaopedrovolponi.com/",
     platform: "Web",
   },
 ];
