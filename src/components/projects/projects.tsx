@@ -60,8 +60,8 @@ const Projects: React.FC<Props> = () => {
   }
 
   function seeAll() {
-    navigate("/all-projects");
-    // window.location.href = "https://www.joaopedrovolponi.com/all-projects";
+    // navigate("/all-projects");
+    window.location.href = "https://www.joaopedrovolponi.com/all-projects";
   }
 
   return (
