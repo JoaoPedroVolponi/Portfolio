@@ -12,7 +12,7 @@ const ProjectsDataMain = [
     title: "Swift POW",
     description:
       "Organização sem fins lucrativos com o objetivo de ensinar conceitos, técnicas de desenvolvimento com Swift ",
-    tool: "Swift - Mobile",
+    tool: "Organização",
     github: "https://github.com/orgs/Swift-P-O-W/repositories",
     link: "https://www.instagram.com/swift.pow/",
     platform: " ",
