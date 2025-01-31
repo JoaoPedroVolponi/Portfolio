@@ -72,6 +72,17 @@ const ProjectsDataMain = [
     link: " ",
     platform: "Mobile",
   },
+  {
+    id: 7,
+    img: brasileirao,
+    title: "salvAÊ",
+    description:
+      "Página de demonstração do salvAÊ e área administrativa.",
+    tool: "Angular",
+    github: " ",
+    link: "https://www.salvae.com.br/",
+    platform: "Web",
+  },
 ];
 
 export default ProjectsDataMain;
