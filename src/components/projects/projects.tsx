@@ -38,7 +38,7 @@ const Projects: React.FC<Props> = () => {
   const [closing, setClosing] = useState(false);
   const projectRef = useRef<{ [key: number]: HTMLDivElement | null }>({});
   const numberOfProjects = toggleProjects
-    ? Math.min(ProjectsDataMain.length, 6)
+    ? Math.min(ProjectsDataMain.length, 8)
     : 3;
   const navigate = useNavigate();
 
