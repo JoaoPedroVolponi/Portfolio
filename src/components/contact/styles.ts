@@ -141,6 +141,7 @@ export const SocialMedia = styled.a`
   height: 60px;
   width: 60px;
   border-radius: 100px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   border: 1px solid ${(props) => props.theme.colors.background};
