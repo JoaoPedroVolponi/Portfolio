@@ -20,6 +20,24 @@ const ProjectsDataWeb = [
     github: " ",
     link: "https://joaopedrovolponi.com/",
   },
+  {
+    id: 3,
+    img: joaopedrovolponi,
+    title: "Twitch Enrique Machado",
+    description: "Portfólio de Projetos",
+    tool: "React",
+    github: " ",
+    link: "https://joaopedrovolponi.com/",
+  },
+  {
+    id: 4,
+    img: joaopedrovolponi,
+    title: "Direcionador Alfa Boost",
+    description: "Portfólio de Projetos",
+    tool: "React",
+    github: " ",
+    link: "https://joaopedrovolponi.com/",
+  },
 ];
 
 export default ProjectsDataWeb;
