@@ -1,5 +1,6 @@
 import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
 import salvaeweb from "../assets/projects/web/salvae-web.png";
+import enriqueTwitch from "../assets/projects/web/enrique-twitch.png";
 
 const ProjectsDataWeb = [
   {
@@ -22,7 +23,7 @@ const ProjectsDataWeb = [
   },
   {
     id: 3,
-    img: joaopedrovolponi,
+    img: enriqueTwitch,
     title: "Twitch Enrique Machado",
     description: "Portfólio de Projetos",
     tool: "React",
