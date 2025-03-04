@@ -1,5 +1,7 @@
 import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
 import salvaeweb from "../assets/projects/web/salvae-web.png";
+import enriqueTwitch from "../assets/projects/web/enrique-twitch.png";
+import alfaBoost from "../assets/projects/web/alfa-boost.png";
 
 const ProjectsDataWeb = [
   {
@@ -22,7 +24,7 @@ const ProjectsDataWeb = [
   },
   {
     id: 3,
-    img: joaopedrovolponi,
+    img: enriqueTwitch,
     title: "Twitch Enrique Machado",
     description: "Portfólio de Projetos",
     tool: "React",
@@ -31,7 +33,7 @@ const ProjectsDataWeb = [
   },
   {
     id: 4,
-    img: joaopedrovolponi,
+    img: alfaBoost,
     title: "Direcionador Alfa Boost",
     description: "Portfólio de Projetos",
     tool: "React",
