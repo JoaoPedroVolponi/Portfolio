@@ -16,7 +16,7 @@ const ProjectsDataWeb = [
   {
     id: 2,
     img: enriqueTwitch,
-    title: "Twitch Enrique Machado",
+    title: "Enrique Machado",
     description: "Apresentação do Streamer Enrique Machado, com gerenciamento de sorteios, patrocinadores e venda de skins (CS2).",
     tool: "Angular",
     github: " ",

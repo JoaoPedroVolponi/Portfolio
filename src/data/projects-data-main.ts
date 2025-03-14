@@ -5,7 +5,7 @@ import viacep from "../assets/projects/mobile/via-cep.png";
 import yaris from "../assets/projects/mobile/yaris.png";
 import brasileirao from "../assets/projects/mobile/brasileirao.png";
 import salvaeweb from "../assets/projects/web/salvae-web.png";
-import joaopedrovolponi from "../assets/projects/web/joao-pedro-volponi.png";
+import enriqueTwitch from "../assets/projects/web/enrique-twitch.png";
 
 const ProjectsDataMain = [
   {
@@ -86,14 +86,12 @@ const ProjectsDataMain = [
   },
   {
     id: 8,
-    img: joaopedrovolponi,
-    title: "João Pedro Volponi",
-    description:
-      "Portfólio de Projetos",
-    tool: "React",
+    img: enriqueTwitch,
+    title: "Enrique Machado",
+    description: "Apresentação do Streamer Enrique Machado, com gerenciamento de sorteios, patrocinadores e venda de skins (CS2).",
+    tool: "Angular",
     github: " ",
-    link: "https://joaopedrovolponi.com/",
-    platform: "Web",
+    link: "https://sitedoenrique.com.br/",
   },
 ];
 
