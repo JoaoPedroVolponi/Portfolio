@@ -20,7 +20,7 @@ const ProjectsDataWeb = [
     description: "Apresentação do Streamer Enrique Machado, com gerenciamento de sorteios, patrocinadores e venda de skins (CS2).",
     tool: "React",
     github: " ",
-    link: "https://joaopedrovolponi.com/",
+    link: "https://sitedoenrique.com.br/",
   },
   {
     id: 3,
