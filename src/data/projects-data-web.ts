@@ -35,10 +35,10 @@ const ProjectsDataWeb = [
     id: 4,
     img: alfaBoost,
     title: "Direcionador Alfa Boost",
-    description: "Portfólio de Projetos",
-    tool: "React",
+    description: "Direcionador para contato com a Alfa Boost (Instagram de Manutenção e Otimização de Computadores).",
+    tool: "Angular",
     github: " ",
-    link: "https://joaopedrovolponi.com/",
+    link: "https://alfaboost.com.br/",
   },
 ];
 
